@@ -28,7 +28,10 @@ let myFunctionAsVariable = function() {
 
 /**
  * Arrow functions.
- * (Will be covered in a later chapter)
+ * Do not have a prototype property.
+ * Not suitable for call, apply aand bind methods.
+ * Cannot be used as constructors.
+ * Cannot use yield within its body.
  */
 const myArrowFunc = () => {
   console.log("myArrowFunc");
