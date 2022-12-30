@@ -58,8 +58,22 @@ function myFunction4() {
   console.log(text);
 }
 
+/**
+ * Function scope example
+ */
+function myFunction5() {
+  for (var i = 0; i < 5; i++) {
+    // Every reference inside this block to variable i
+    // will actually point to the same variable (i.e., pointer)
+    setTimeout(() => {
+      console.log(i); // 5, 5, 5, 5, 5
+    }, 100);
+  }
+}
+
 
 // myFunction1();
 // myFunction2();
 // myFunction3();
 // myFunction4();
+// myFunction5();
